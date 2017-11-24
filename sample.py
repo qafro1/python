@@ -8,11 +8,11 @@ from datetime import datetime
 import time
 
 #input the source directory
-src = "path"
+src = "/Users/gof/Downloads/"
 #archive name of the target path directory
-archive_name = "path"
+archive_name = "/Users/gof/Documents/archive"
 #timestamp archive_name
-archive_name_time = datetime.now().strftime(archive_name + '_%H_%M_%d_%m_%Y.gz')
+archive_name_time = datetime.now().strftime(archive_name + '_%H_%M_%d_%m_%Y.tar.gz')
 # write to latest_files.tar.gz
 with tarfile.open(archive_name_time, "w:gz") as tar:
   for name in glob.glob(os.path.join(src,"*")):
