@@ -1,0 +1,448 @@
++ SRCDIR=/sftp/neolane/neolane
++ DSTDIR=/sftp/staging/uairship
+++ date +%Y%m%d
++ DATE=20171124
++ STATEFILE=/var/db/staging/UA_20171124.state
++ declare -a FINISHED
+++ date '+%d/%m/%Y %T'
++ echo 'Started at 24/11/2017 08:45:01'
+Started at 24/11/2017 08:45:01
++ '[' -f /var/db/staging/UA_20171124.state ']'
++ IFS='
+'
++ read -d '' -r -a FINISHED
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready
++ filename=0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready
+++ containsElement 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready
++ filename=0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready
+++ containsElement 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \0\W\D\k\d\4\q\l\R\x\e\v\-\_\j\Z\8\K\k\R\n\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready
++ filename=40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready
+++ containsElement 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \4\0\T\f\j\g\5\_\Q\M\i\e\g\p\s\8\e\-\A\4\g\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \4\0\T\f\j\g\5\_\Q\M\i\e\g\p\s\8\e\-\A\4\g\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready
++ filename=9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready
+++ containsElement 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready
++ filename=9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready
+++ containsElement 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready == \9\p\T\h\7\V\g\-\S\h\m\a\5\o\t\t\-\N\Q\S\H\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready
++ filename=B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready
+++ containsElement B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \B\9\E\f\6\_\F\M\S\u\K\5\Z\W\l\L\e\F\h\R\D\g\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \B\9\E\f\6\_\F\M\S\u\K\5\Z\W\l\L\e\F\h\R\D\g\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \B\9\E\f\6\_\F\M\S\u\K\5\Z\W\l\L\e\F\h\R\D\g\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready
++ filename=Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready
+++ containsElement Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \C\g\m\6\E\9\6\3\S\3\W\z\L\6\O\j\r\V\r\d\r\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \C\g\m\6\E\9\6\3\S\3\W\z\L\6\O\j\r\V\r\d\r\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \C\g\m\6\E\9\6\3\S\3\W\z\L\6\O\j\r\V\r\d\r\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \C\g\m\6\E\9\6\3\S\3\W\z\L\6\O\j\r\V\r\d\r\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready
++ filename=gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready
+++ containsElement gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \g\v\P\W\7\4\H\x\Q\U\2\e\-\F\i\d\x\v\R\I\l\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \g\v\P\W\7\4\H\x\Q\U\2\e\-\F\i\d\x\v\R\I\l\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \g\v\P\W\7\4\H\x\Q\U\2\e\-\F\i\d\x\v\R\I\l\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \g\v\P\W\7\4\H\x\Q\U\2\e\-\F\i\d\x\v\R\I\l\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \g\v\P\W\7\4\H\x\Q\U\2\e\-\F\i\d\x\v\R\I\l\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready
++ filename=ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready
+++ containsElement ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready
++ filename=ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready
+++ containsElement ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready
++ filename=ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready
+++ containsElement ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready == \i\d\o\4\d\0\F\L\T\y\u\v\U\d\N\a\e\r\v\h\D\Q\-\2\0\1\7\1\1\2\4\_\3\_\o\f\_\3\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready
++ filename=jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready
+++ containsElement jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \j\R\c\1\m\k\H\w\R\T\y\_\k\G\I\s\O\l\Y\V\s\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready
++ filename=SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready
+++ containsElement SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \S\P\G\0\8\6\q\c\Q\x\2\_\p\R\d\v\a\d\D\d\V\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready
++ filename=VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready
+++ containsElement VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
++ filename=VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ containsElement VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready == \V\K\q\G\m\s\5\Y\T\E\y\6\o\y\L\J\X\O\S\v\R\w\-\2\0\1\7\1\1\2\4\_\2\_\o\f\_\2\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ for f in '$SRCDIR/*${DATE}*.ready'
+++ basename /sftp/neolane/neolane/zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready
++ filename=zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready
+++ containsElement zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
+++ local e
+++ for e in '"${@:2}"'
+++ [[ *20171124*.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ for e in '"${@:2}"'
+++ [[ zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready == \z\B\F\Z\o\q\N\c\Q\f\y\I\n\P\P\n\P\L\V\m\N\A\-\2\0\1\7\1\1\2\4\_\1\_\o\f\_\1\.\c\s\v\.\r\e\a\d\y ]]
+++ echo y
+++ return 0
++ '[' y == n ']'
++ chown williamhill2:AdobeCam '/sftp/staging/uairship/*'
+chown: cannot access `/sftp/staging/uairship/*': No such file or directory
++ printf '%s\n' '*20171124*.ready' 40Tfjg5_QMiegps8e-A4gQ-20171124_1_of_1.csv.ready B9Ef6_FMSuK5ZWlLeFhRDg-20171124_1_of_1.csv.ready Cgm6E963S3WzL6OjrVrdrQ-20171124_1_of_1.csv.ready gvPW74HxQU2e-FidxvRIlA-20171124_1_of_1.csv.ready jRc1mkHwRTy_kGIsOlYVsA-20171124_1_of_1.csv.ready SPG086qcQx2_pRdvadDdVA-20171124_1_of_1.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_1_of_2.csv.ready zBFZoqNcQfyInPPnPLVmNA-20171124_1_of_1.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_1_of_2.csv.ready 0WDkd4qlRxev-_jZ8KkRnw-20171124_2_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_1_of_2.csv.ready 9pTh7Vg-Shma5ott-NQSHQ-20171124_2_of_2.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_1_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_2_of_3.csv.ready ido4d0FLTyuvUdNaervhDQ-20171124_3_of_3.csv.ready VKqGms5YTEy6oyLJXOSvRw-20171124_2_of_2.csv.ready
