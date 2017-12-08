@@ -18,10 +18,10 @@ def atime(path):
         return "The time of last access of path: %s" % time.ctime(os.path.getatime(path)) + " \n" + path
 
 #Open log file
-file = open('path','w')
+file = open('/Users/gof/Documents/scripts/result.txt','w')
 #source directory of any files
-path = 'path'
-filename = 'path/*.gz'
+path = '/Users/gof/Downloads/'
+filename = '/Users/gof/Downloads/test'
 file.write(atime(path))
 file.write(files(path))
 file.close()
