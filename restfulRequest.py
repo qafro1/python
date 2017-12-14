@@ -1,4 +1,4 @@
-#!/usr/env python
+#!/usr/bin/python
 #Send simple HTTP requests
 import requests
 
@@ -11,3 +11,4 @@ uri = 'url'
 f = open('filename','w')
 f.write(headers(uri))
 f.close()
+ 
